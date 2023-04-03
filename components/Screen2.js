@@ -1,52 +1,37 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+import newsData from './newsData.json';
 
-export default function Screen2() {
+const Screen2 = () => {
+  const navigation = useNavigation();
+
+  const renderNewsItem = ({ item }) => {
+    return (
+      <TouchableOpacity onPress={() => navigation.navigate('NewsItem', { item })}>
+        <View style={{ flexDirection: 'row', marginVertical: 10 }}>
+          <Image
+            source={{ uri: item.image }}
+            style={{ width: 100, height: 100, marginRight: 10 }}
+          />
+          <View>
+            <Text style={{ fontSize: 16, fontWeight: 'bold' }}>{item.title}</Text>
+            <Text style={{ fontSize: 12, color: 'gray', marginBottom: 5 }}>{item.date}</Text>
+            <Text numberOfLines={3}>{item.content}</Text>
+          </View>
+        </View>
+      </TouchableOpacity>
+    );
+  };
+
   return (
-    <View style={styles.container}>
-      <Image source={require('../assets/logos/somaligrup.png')} style={styles.logo} />
-      <View style={styles.textContainer}>
-        <Text style={styles.title}>Somali Batallion</Text>
-        <Text style={styles.bodyText}>Somali Batallion /Батальон «Сомали»
-    merupakan sebuah Batalyon Sukarelawan Separatis Donetsk , Bagian dari Militer Republik Rakyat Donetsk /Донецкая Народная Республика . Komandan saat ini adalah Timur Kulikin , Komandan Terkenal nya adalah Mihail Tolstykh aka Givi </Text>
-      </View>
-    </View>
+    <FlatList
+      data={newsData}
+      renderItem={renderNewsItem}
+      keyExtractor={(item) => item.id.toString()}
+      style={{ padding: 10 }}
+    />
   );
-}
+};
 
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      alignItems: 'center',
-      textAlign: 'center',
-      justifyContent: 'center',
-    },
-    logo: {
-      width: "50%", 
-      height: "50%",
-      resizeMode: 'contain',
-    },
-    textContainer: {
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-    title: {
-      fontSize: 24,
-      fontWeight: 'bold',
-    },
-    square: {
-        width: 300,
-        height: 300,
-        borderWidth: 4,
-        borderRadius: 1520, // half of width or height
-        alignItems: 'center',
-        justifyContent: 'center',
-      },
-    bodyText: {
-      fontSize: 14,
-      fontWeight: '500',
-      textAlign: 'justify',
-      justifyContent: 'center',
-    },
-  });
-  
+export default Screen2;
