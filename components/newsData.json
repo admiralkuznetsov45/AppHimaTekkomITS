@@ -30,9 +30,27 @@
          
     },
     {    "id": 5,    
-         "title": "Indonesia Kembali Raih Medali Emas di Olimpiade 2024",    
+         "title": "Indonesia Kembali Raih Medali Emas di Olimpiade 20211",    
          "date": "31 Maret 2023",    
          "content": "Indonesia berhasil meraih medali emas di Olimpiade 2024 yang digelar di Paris, Prancis. Prestasi ini merupakan kebanggaan bagi bangsa Indonesia dan diharapkan dapat menjadi motivasi untuk lebih meningkatkan prestasi di masa depan.",    
          "image": "https://picsum.photos/id/1/200/200"
-    }
+    },
+    {    "id": 6,    
+         "title": "Indonesia Kembali Raih Medali Emas di Olimpiade 2026",    
+         "date": "31 Maret 2023",    
+         "content": "Indonesia berhasil meraih medali emas di Olimpiade 2024 yang digelar di Paris, Prancis. Prestasi ini merupakan kebanggaan bagi bangsa Indonesia dan diharapkan dapat menjadi motivasi untuk lebih meningkatkan prestasi di masa depan.",    
+         "image": "https://picsum.photos/id/1/200/200"
+    },
+    {    "id": 7,    
+         "title": "Indonesia Kembali Raih Medali Emas di Olimpiade 2025",    
+         "date": "30 Maret 2023",    
+         "content": "Indonesia berhasil meraih medali emas di Olimpiade 2024 yang digelar di Paris, Prancis. Prestasi ini merupakan kebanggaan bagi bangsa Indonesia dan diharapkan dapat menjadi motivasi untuk lebih meningkatkan prestasi di masa depan.",    
+         "image": "https://picsum.photos/id/1/200/200"
+    },
+    {    "id": 8,    
+    "title": "Indonesia Kembali Raih Medali Emas di Olimpiade 21025",    
+    "date": "30 Maret 2023",    
+    "content": "Indonesia berhasil meraih medali emas di Olimpiade 2024 yang digelar di Paris, Prancis. Prestasi ini merupakan kebanggaan bagi bangsa Indonesia dan diharapkan dapat menjadi motivasi untuk lebih meningkatkan prestasi di masa depan.",    
+    "image": "https://picsum.photos/id/1/200/200"
+     }    
 ]

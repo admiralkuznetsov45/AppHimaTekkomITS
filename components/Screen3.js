@@ -17,7 +17,7 @@ const Screen3 = () => {
   const playSound = async () => {
     if (sound === null) {
       const { sound: newSound } = await Audio.Sound.createAsync(
-        { uri: 'https://22283.live.streamtheworld.com/PRAMBORS_FM_SC?dist=pramborsweb&pname=tdwidgets' },
+        { uri: 'https://us1freenew.listen2myradio.com/live.mp3?typeportmount=s1_14239_stream_299257626' },
         { shouldPlay: true }
       );
       setSound(newSound);
